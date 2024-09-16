@@ -1,0 +1,21 @@
+[alias]
+  co = checkout
+  # Commit with a message
+  com = commit -m
+  # Stage all files and commit with a message
+  acom = "!f() { git add -A ; git commit -m \"$1\" ; }; f"
+  # Commit with a message and push
+  comp = "!f() { git commit -m \"$1\" ; git push ; }; f"
+  # Stage all files, commit with a message and push
+  acomp = "!f() { git add -A ; git commit -m \"$1\" ; git push ; }; f"
+  st = status
+  graph = log --all --decorate --oneline --graph
+[push]
+  default = current
+[user]
+  email = evan@jacksonnet.ca
+  name = Evan Jackson
+[init]
+  defaultBranch = main
+[core]
+  autocrlf = input
