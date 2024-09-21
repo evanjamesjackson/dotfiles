@@ -42,13 +42,13 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Plugins
 call plug#begin()
 Plug 'tpope/vim-surround'
-Plug 'psliwka/vim-smoothie'
+"Plug 'psliwka/vim-smoothie'
 Plug 'frazrepo/vim-rainbow'
 Plug 'LunarWatcher/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdcommenter'
-Plug 'ericbn/vim-solarized'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 " Plugin configurations
@@ -66,6 +66,6 @@ nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
 set background=dark
-autocmd vimenter * ++nested colorscheme solarized
+autocmd vimenter * ++nested colorscheme nord
 " Required for transparent background
 autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
