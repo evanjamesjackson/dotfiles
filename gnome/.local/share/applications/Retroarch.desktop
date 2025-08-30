@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=RetroArch
+Comment=RetroArch Emulator
+Exec=retroarch %f
+Icon=retroarch
+Terminal=false
+Type=Application
+Categories=Game;Emulator;
+StartupWMClass=retroarch
+
