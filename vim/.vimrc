@@ -66,6 +66,6 @@ nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
 set background=dark
-autocmd vimenter * ++nested colorscheme nord
+"autocmd vimenter * ++nested colorscheme nord
 " Required for transparent background
 autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
