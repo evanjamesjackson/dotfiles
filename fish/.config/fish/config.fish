@@ -6,3 +6,5 @@ end
 set fish_prompt_pwd_dir_length 0
 
 set -g fish_greeting
+
+bind \cH backward-kill-word
